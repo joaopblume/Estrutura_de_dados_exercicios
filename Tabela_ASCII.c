@@ -3,6 +3,10 @@
 #include <locale.h>
 #include <string.h>
 
+
+// Imprimir uma listagem de todos os caracteres ASCII, exibindo seu código e o caractere específico.
+
+
 int main(){
 
     int i;

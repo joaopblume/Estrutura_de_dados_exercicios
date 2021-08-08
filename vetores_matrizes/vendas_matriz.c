@@ -17,7 +17,7 @@ int main(){
         }
     }
 
-    // printando a matriz em formato matriarcal
+    // printando a matriz em formato matricial
 
     for (i=0;i<MAX_LIN; i++){
         printf("\n");

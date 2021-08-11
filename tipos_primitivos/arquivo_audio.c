@@ -16,22 +16,24 @@ exponencial.
 */
 main(){
 
-    int arquivo;
-    int raw;
+    float arquivo;
+    float raw;
+    float kb, gb, b, tb;
 
     printf("Tamanho do arquivo mp3 em MB: ");
-    scanf("%d", &arquivo);
+    scanf("%f", &arquivo);
 
     raw = arquivo * 12;
+    kb = raw * 1024;
+    b = kb * 1024;
+    gb = raw / 1024;
+    tb = gb / 1024;
 
-    printf("Arquivo original possui o tamanho de %d MB.\n", raw);
-    printf("Arquivo original possui o tamanho de %d KB.\n", raw * 1024);
-    printf("Arquivo original possui o tamanho de %d GB.\n", raw / 1024);
-    printf("Arquivo original possui o tamanho de %d B.\n", raw * 1000000);
-    printf("Arquivo original possui o tamanho de %d TB.\n", raw / 1000000);
-
-
-
+    printf("Arquivo original possui o tamanho de %.4f MB.\n", raw);
+    printf("Arquivo original possui o tamanho de %.4f KB.\n", kb);
+    printf("Arquivo original possui o tamanho de %.4f GB.\n", gb);
+    printf("Arquivo original possui o tamanho de %.4f B.\n", b);
+    printf("Arquivo original possui o tamanho de %.4f TB.\n", tb);
 
     return 0;
 }

@@ -11,7 +11,7 @@ int main(){
 
     int i;
 
-    for(i=32;i<255;i++){
+    for(i=0;i<255;i++){
         if(i % 10 == 0){
         printf("\n");
         }

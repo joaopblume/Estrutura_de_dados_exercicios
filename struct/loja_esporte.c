@@ -45,7 +45,7 @@ int leProduto (struct TipoProduto prod[]){
         printf("Continuar? [S/N]: ");
         scanf("%c", &continuar);
         i++;
-    }while(continuar == 'S');
+    }while(continuar == 'S' && i<MAXPROD);
     return i;
 }
 

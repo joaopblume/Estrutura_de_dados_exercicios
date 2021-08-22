@@ -23,7 +23,7 @@ void geraMatrizAleatoria(int n, int matriz[n][n]){
     int i, j;
     for(i=0;i<n;i++){
         for(j=0;j<n;j++){
-            matriz[i][j] = rand() % 9;
+            matriz[i][j] = rand() % 10;
         }
     }
 }
